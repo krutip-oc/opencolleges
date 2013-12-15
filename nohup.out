@@ -1,0 +1,2 @@
+ALSA lib conf.c:4687:(snd_config_expand) Unknown parameters CARD=PCH
+ALSA lib control.c:951:(snd_ctl_open_noupdate) Invalid CTL default:CARD=PCH
