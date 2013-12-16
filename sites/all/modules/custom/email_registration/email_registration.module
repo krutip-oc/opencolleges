@@ -1,9 +1,79 @@
 <?php
-
 /**
  * @file
  * Allows users to register with an e-mail address as their username.
  */
+
+/**
+ * Implements hook_user_presave().
+ */
+function email_registration_user_presave(&$edit, &$account, $category = NULL) {
+    //print_r($account);exit;
+    $originalemail = &$account->mail;
+    $newemail = &$account->init;
+    drupal_set_message(t('Email update has been successful. You need to login to your new email account: '. $newemail.' !== '.$originalemail.' to verify the new email address within 4 hours.'));
+    _user_email_notify('email_reset', $account);
+
+    return;
+}
+
+
+
+/**
+ * Returns a mail string for a variable name.
+ *
+ * Used by user_mail() and the settings forms to retrieve strings.
+ */
+/**
+ * Conditionally create and send a notification email when a certain
+ * operation happens on the given user account.
+ *
+ * @see user_mail_tokens()
+ * @see drupal_mail()
+ *
+ * @param $op
+ *   The operation being performed on the account. Possible values:
+ *   - 'register_admin_created': Welcome message for user created by the admin.
+ *   - 'register_no_approval_required': Welcome message when user
+ *     self-registers.
+ *   - 'register_pending_approval': Welcome message, user pending admin
+ *     approval.
+ *   - 'password_reset': Password recovery request.
+ *   - 'status_activated': Account activated.
+ *   - 'status_blocked': Account blocked.
+ *   - 'cancel_confirm': Account cancellation request.
+ *   - 'status_canceled': Account canceled.
+ *
+ * @param $account
+ *   The user object of the account being notified. Must contain at
+ *   least the fields 'uid', 'name', and 'mail'.
+ * @param $language
+ *   Optional language to use for the notification, overriding account language.
+ *
+ * @return
+ *   The return value from drupal_mail_system()->mail(), if ends up being
+ *   called.
+ */
+function _user_email_notify($op, $account, $language = NULL) {
+    //print $account->original->mail;exit;
+    // By default, we always notify except for canceled and blocked.
+    $default_notify = ($op != 'status_canceled' && $op != 'status_blocked');
+    $notify = variable_get('user_mail_' . $op . '_notify', $default_notify);
+    if (!$notify) {
+        $params['account'] = $account;
+        $language = $language ? $language : user_preferred_language($account);
+        $mail = drupal_mail('user', $op, $account->init, $language, $params);
+        if ($op == 'email_reset') {
+            // If a user registered requiring admin approval, notify the admin, too.
+            // We use the site default language for this.
+            drupal_mail('user', 'email_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
+        }
+    }
+
+    return empty($mail) ? NULL : $mail['result'];
+}
+
+
 
 /**
  * Implements hook_user_insert().
@@ -20,7 +90,6 @@ function email_registration_user_insert(&$edit, &$account, $category = NULL) {
   $names = module_invoke_all('email_registration_name', $edit, $account);
   // Remove any empty entries.
   $names = array_filter($names);
-    print_r ($names);
 
   if (empty($names)) {
     // Strip off everything after the @ sign.
@@ -154,6 +223,8 @@ function email_registration_user_login_validate($form, &$form_state) {
 function email_registration_form_user_profile_form_alter($form, &$form_state) {
   $form['account']['name']['#title'] = t('Display name');
 }
+
+
 
 /**
  * Implements hook_menu().

@@ -2329,6 +2329,23 @@ function user_pass_reset_url($account) {
   return url("user/reset/$account->uid/$timestamp/" . user_pass_rehash($account->pass, $timestamp, $account->login), array('absolute' => TRUE));
 }
 
+
+/**
+ * Generates a unique URL for a user to login and reset their email.
+ *
+ * @param object $account
+ *   An object containing the user account.
+ *
+ * @return
+ *   A unique URL that provides a one-time log in for the user, from which
+ *   they can change their password.
+ */
+function user_email_reset_url($account) {
+    $timestamp = REQUEST_TIME;
+    return url("user/emailreset/$account->uid/$timestamp/" . user_pass_rehash($account->pass, $timestamp, $account->login), array('absolute' => TRUE));
+}
+
+
 /**
  * Generates a URL to confirm an account cancellation request.
  *
@@ -2749,6 +2766,23 @@ This link can only be used once to log in and will lead you to a page where you 
 
 --  [site:name] team", array(), array('langcode' => $langcode));
         break;
+      case 'email_reset_subject':
+            $text = t('Replacement email for [user:name] at [site:name]', array(), array('langcode' => $langcode));
+            break;
+      case 'email_reset_body':
+            $text = t("[user:name],
+
+A request to change the email for your account has been made at [site:name].
+
+You may now log in by clicking this link or copying and pasting it to your browser:
+
+[user:one-time-loginemail-url]
+
+This link can only be used once to log in. It expires after one day and nothing will happen if it's not used.
+
+--  [site:name] team", array(), array('langcode' => $langcode));
+      break;
+
 
       case 'status_activated_subject':
         $text = t('Account details for [user:name] at [site:name] (approved)', array(), array('langcode' => $langcode));
@@ -2846,6 +2880,7 @@ Your account on [site:name] has been canceled.
 function user_mail_tokens(&$replacements, $data, $options) {
   if (isset($data['user'])) {
     $replacements['[user:one-time-login-url]'] = user_pass_reset_url($data['user']);
+    $replacements['[user:one-time-loginemail-url]'] = user_email_reset_url($data['user']);
     $replacements['[user:cancel-url]'] = user_cancel_url($data['user']);
   }
 }
@@ -3547,7 +3582,7 @@ function user_preferred_language($account, $default = NULL) {
  *   - 'status_blocked': Account blocked.
  *   - 'cancel_confirm': Account cancellation request.
  *   - 'status_canceled': Account canceled.
- *
+ *   -  'email_reset': Email change request.
  * @param $account
  *   The user object of the account being notified. Must contain at
  *   least the fields 'uid', 'name', and 'mail'.
