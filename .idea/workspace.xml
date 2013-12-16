@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration-7.x-1.1.tar.gz" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration-7.x-1.1.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/default/files/pictures/picture-10-1386911995.png" afterPath="$PROJECT_DIR$/sites/default/files/pictures/picture-10-1386911995.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/pictures/picture-10-1386911995.png" afterPath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/pictures/picture-10-1386911995.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/LICENSE.txt" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/README.txt" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.api.php" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.info" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.test" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/user/user.module" afterPath="$PROJECT_DIR$/modules/user/user.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -60,7 +51,7 @@
       <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="9" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.44827586" vertical-offset="864" max-vertical-offset="5814">
+            <state line="320" column="131" selection-start="13236" selection-end="13236" vertical-scroll-proportion="0.8181818" vertical-offset="5355" max-vertical-offset="6336">
               <folding>
                 <element signature="e#6#92#0" expanded="true" />
               </folding>
@@ -83,7 +74,7 @@
       <file leaf-file-name="user.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/user/user.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2778" column="25" selection-start="101149" selection-end="101149" vertical-scroll-proportion="-55.72222" vertical-offset="46941" max-vertical-offset="73008">
+            <state line="2344" column="31" selection-start="86531" selection-end="86531" vertical-scroll-proportion="-3.7222223" vertical-offset="41937" max-vertical-offset="73206">
               <folding />
             </state>
           </provider>
@@ -444,29 +435,33 @@
       <created>1387162723942</created>
       <updated>1387162723942</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="email body with new links generated">
+      <created>1387177317618</created>
+      <updated>1387177317618</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33728448" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33728448" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18910256" sideWeight="0.6627155" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -480,10 +475,19 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="modifications for email/student id login" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifications for email/student id login" />
+    <MESSAGE value="email body with new links generated" />
+    <option name="LAST_COMMIT_MESSAGE" value="email body with new links generated" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module</url>
+          <line>118</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drupalchat/js/drupalchat.js">
@@ -580,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2778" column="25" selection-start="101149" selection-end="101149" vertical-scroll-proportion="-55.72222" vertical-offset="46941" max-vertical-offset="73008">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/user.install">
       <provider selected="true" editor-type-id="text-editor">
         <state line="556" column="4" selection-start="17121" selection-end="17121" vertical-scroll-proportion="-353.57144" vertical-offset="108" max-vertical-offset="16542">
@@ -597,9 +594,16 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2344" column="31" selection-start="86531" selection-end="86531" vertical-scroll-proportion="-3.7222223" vertical-offset="41937" max-vertical-offset="73206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="9" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.44827586" vertical-offset="864" max-vertical-offset="5814">
+        <state line="320" column="131" selection-start="13236" selection-end="13236" vertical-scroll-proportion="0.8181818" vertical-offset="5355" max-vertical-offset="6336">
           <folding>
             <element signature="e#6#92#0" expanded="true" />
           </folding>
