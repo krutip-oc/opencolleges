@@ -50,7 +50,7 @@ $schema['users_history'] = array(
     ),
     'modifiedtime' => array(
       'description' => 'TODO: please describe this field!',
-      'type' => 'datetime',
+      'mysql_type' => 'datetime',
       'not null' => TRUE,
     ),
   ),

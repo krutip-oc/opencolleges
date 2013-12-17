@@ -4,6 +4,7 @@
     <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/user/user.module" afterPath="$PROJECT_DIR$/modules/user/user.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="opencolleges.iws" />
@@ -51,7 +52,7 @@
       <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="3" selection-start="9001" selection-end="9001" vertical-scroll-proportion="0.53411764" vertical-offset="4363" max-vertical-offset="6498">
+            <state line="19" column="13" selection-start="393" selection-end="777" vertical-scroll-proportion="0.42352942" vertical-offset="162" max-vertical-offset="6570">
               <folding>
                 <element signature="e#6#92#0" expanded="true" />
               </folding>
@@ -74,7 +75,7 @@
       <file leaf-file-name="user.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/user/user.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="516" column="54" selection-start="21247" selection-end="21247" vertical-scroll-proportion="-3.9444444" vertical-offset="9021" max-vertical-offset="73206">
+            <state line="2345" column="55" selection-start="86590" selection-end="86590" vertical-scroll-proportion="-3.6111112" vertical-offset="41961" max-vertical-offset="73224">
               <folding />
             </state>
           </provider>
@@ -83,7 +84,7 @@
       <file leaf-file-name="email_registration.install" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="17" selection-start="1487" selection-end="1499" vertical-scroll-proportion="-10.321428" vertical-offset="611" max-vertical-offset="1188">
+            <state line="28" column="3" selection-start="863" selection-end="863" vertical-scroll-proportion="-0.64285713" vertical-offset="486" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -154,8 +155,8 @@
       <list>
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/drupalchat.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/README.txt" />
-        <option value="$PROJECT_DIR$/modules/user/user.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" />
+        <option value="$PROJECT_DIR$/modules/user/user.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
       </list>
     </option>
@@ -447,12 +448,16 @@
       <created>1387238176638</created>
       <updated>1387238176638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="email change link with verification link v1">
+      <created>1387241533960</created>
+      <updated>1387241533960</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -486,14 +491,16 @@
     <MESSAGE value="modifications for email/student id login" />
     <MESSAGE value="email body with new links generated" />
     <MESSAGE value="email change link with verification link" />
-    <option name="LAST_COMMIT_MESSAGE" value="email change link with verification link" />
+    <MESSAGE value="email change link with verification link v1" />
+    <MESSAGE value="email change link with verification link: all features are almost complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="email change link with verification link: all features are almost complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module</url>
-          <line>118</line>
+          <line>122</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -594,16 +601,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="516" column="54" selection-start="21247" selection-end="21247" vertical-scroll-proportion="-3.9444444" vertical-offset="9021" max-vertical-offset="73206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1487" selection-end="1499" vertical-scroll-proportion="-10.321428" vertical-offset="611" max-vertical-offset="1188">
+        <state line="28" column="3" selection-start="863" selection-end="863" vertical-scroll-proportion="-0.64285713" vertical-offset="486" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
@@ -611,9 +611,16 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2345" column="55" selection-start="86590" selection-end="86590" vertical-scroll-proportion="-3.6111112" vertical-offset="41961" max-vertical-offset="73224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="3" selection-start="9001" selection-end="9001" vertical-scroll-proportion="0.53411764" vertical-offset="4363" max-vertical-offset="6498">
+        <state line="19" column="13" selection-start="393" selection-end="777" vertical-scroll-proportion="0.42352942" vertical-offset="162" max-vertical-offset="6570">
           <folding>
             <element signature="e#6#92#0" expanded="true" />
           </folding>

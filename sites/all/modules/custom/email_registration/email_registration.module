@@ -9,12 +9,16 @@
  */
 function email_registration_user_presave(&$edit, &$account, $category = NULL) {
     //print_r($account);exit;
-    $originalemail = &$account->mail;
-    $newemail = &$account->init;
-    drupal_set_message(t('Email update has been successful. You need to login to your new email account: '. $newemail.' !== '.$originalemail.' to verify the new email address within 4 hours.'));
-    _user_email_notify('email_reset', $account);
-    _user_email_notify('oldemail_reset', $account);
-    return;
+    $originalemail = $account->mail;
+    $newemail = trim($edit['mail']);
+    $uid = $account->uid;
+    if ($originalemail <> $newemail){
+        drupal_set_message(t('Email update has been successful. You need to login to your new email account: '. $newemail.' !== '.$originalemail.' to verify the new email address within 4 hours.'));
+        _user_email_notify('email_reset', $account, $newemail);
+        _user_email_notify('oldemail_reset', $account, $originalemail);
+        drupal_goto('/user/'.$uid.'/edit');
+        exit;
+    }
 }
 
 
@@ -54,7 +58,7 @@ function email_registration_user_presave(&$edit, &$account, $category = NULL) {
  *   The return value from drupal_mail_system()->mail(), if ends up being
  *   called.
  */
-function _user_email_notify($op, $account, $language = NULL) {
+function _user_email_notify($op, $account, $emailaddress, $language = NULL) {
     //print $account->original->mail;exit;
     // By default, we always notify except for canceled and blocked.
     $default_notify = ($op != 'status_canceled' && $op != 'status_blocked');
@@ -64,13 +68,13 @@ function _user_email_notify($op, $account, $language = NULL) {
         $language = $language ? $language : user_preferred_language($account);
 
         if ($op == 'email_reset') {
-            $mail = drupal_mail('user', $op, $account->init, $language, $params);
+            $mail = drupal_mail('user', $op, $emailaddress, $language, $params);
             // If a user registered requiring admin approval, notify the admin, too.
             // We use the site default language for this.
             drupal_mail('user', 'email_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
         }
         if ($op == 'oldemail_reset') {
-            $mail = drupal_mail('user', $op, $account->mail, $language, $params);
+            $mail = drupal_mail('user', $op, $emailaddress, $language, $params);
             // If a user registered requiring admin approval, notify the admin, too.
             // We use the site default language for this.
             drupal_mail('user', 'oldemail_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
@@ -253,9 +257,9 @@ function email_registration_menu() {
  */
 function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $hashed_pass, $action = NULL) {
     global $user;
-   
+
     $newemail = urldecode($newemail);
-    $oldemail = $account->mail;
+    $oldemail = $user->mail;
 
     // When processing the one-time login link, we have to make sure that a user
     // isn't already logged in.
@@ -269,7 +273,7 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                 ->condition('uid', $user->uid)
                 ->execute();
             // Add the old email to history table
-            db_insert('users_history')->fields(array('uid' => $user->uid, 'oldemail'=> $user->mail, 'modifiedtime' => date('Y/m/d H:i:s')))
+            db_insert('users_history')->fields(array('uid' => $user->uid, 'oldemail'=> $oldemail, 'modifiedtime' => date('Y/m/d H:i:s')))
                 ->execute();
             drupal_set_message(t('You have just successfully changed your email address! <a href="!user_edit">View the changes.</a>', array('%user' => $user->name, '!user_edit' => url("user/$user->uid/edit"))));
 
@@ -325,7 +329,7 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                         ->condition('uid', $account->uid)
                         ->execute();
                     // Add the old email to history table
-                    db_insert('users_history')->fields(array('uid' => $account->uid, 'oldemail'=> $account->mail, 'modifiedtime' => date('Y/m/d H:i:s')))
+                    db_insert('users_history')->fields(array('uid' => $account->uid, 'oldemail'=> $oldemail, 'modifiedtime' => date('Y/m/d H:i:s')))
                         ->execute();
                     drupal_set_message(t('You have just successfully changed your email address! Please <a href="/user/login">Login</a> to see the changes'));
                 }
