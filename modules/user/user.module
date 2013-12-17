@@ -1053,6 +1053,8 @@ function user_account_form(&$form, &$form_state) {
     '#default_value' => (!$register ? $account->mail : ''),
   );
 
+    $form['account']['submit'] = array('#type' => 'submit', '#value' => t('Verify Email'));
+
   // Display password field only for existing users or when user is allowed to
   // assign a password during registration.
   if (!$register) {

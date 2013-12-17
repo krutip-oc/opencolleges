@@ -8,75 +8,27 @@
  * Implements hook_user_presave().
  */
 function email_registration_user_presave(&$edit, &$account, $category = NULL) {
-    //print_r($account);exit;
+
+    $submitbutton = $_REQUEST['op'];
     $originalemail = $account->mail;
     $newemail = trim($edit['mail']);
     $uid = $account->uid;
-    if ($originalemail <> $newemail){
-        drupal_set_message(t('Email update has been successful. You need to login to your new email account: '. $newemail.' !== '.$originalemail.' to verify the new email address within 4 hours.'));
+
+    if ($originalemail <> $newemail && $submitbutton =="Verify Email"){
+        drupal_set_message(t('Your request to change email address has been sent. Your email will not be changed until you login to your new email account: '. $newemail.' to verify the new email address within 4 hours.'));
         _user_email_notify('email_reset', $account, $newemail);
         _user_email_notify('oldemail_reset', $account, $originalemail);
         $account->mail = $originalemail;
 
-        /*if (!empty($edit['pass'])) {
-            // Allow alternate password hashing schemes.
-            require_once DRUPAL_ROOT . '/' . variable_get('password_inc', 'includes/password.inc');
-            $edit['pass'] = user_hash_password(trim($edit['pass']));
-            // Abort if the hashing failed and returned FALSE.
-            if (!$edit['pass']) {
-                return FALSE;
-            }
-
-            db_update('users')
-                ->fields(array('pass' => $edit['pass']))
-                ->condition('uid', $uid)
-                ->execute();
-        }
-        else {
-            // Avoid overwriting an existing password with a blank password.
-            unset($edit['pass']);
-        }*/
-
-        // Process picture uploads.
-        /*if (!empty($account->picture->fid) && (!isset($account->original->picture->fid) || $account->picture->fid != $account->original->picture->fid)) {
-            $picture = $account->picture;
-            // If the picture is a temporary file move it to its final location and
-            // make it permanent.
-            if (!$picture->status) {
-                $info = image_get_info($picture->uri);
-                $picture_directory =  file_default_scheme() . '://' . variable_get('user_picture_path', 'pictures');
-
-                // Prepare the pictures directory.
-                file_prepare_directory($picture_directory, FILE_CREATE_DIRECTORY);
-                $destination = file_stream_wrapper_uri_normalize($picture_directory . '/picture-' . $account->uid . '-' . REQUEST_TIME . '.' . $info['extension']);
-
-                // Move the temporary file into the final location.
-                if ($picture = file_move($picture, $destination, FILE_EXISTS_RENAME)) {
-                    $picture->status = FILE_STATUS_PERMANENT;
-                    $account->picture = file_save($picture);
-                    file_usage_add($picture, 'user', 'user', $account->uid);
-                }
-            }
-            // Delete the previous picture if it was deleted or replaced.
-            if (!empty($account->original->picture->fid)) {
-                file_usage_delete($account->original->picture, 'user', 'user', $account->uid);
-                file_delete($account->original->picture);
-            }
-        }
-        elseif (isset($edit['picture_delete']) && $edit['picture_delete']) {
-            file_usage_delete($account->original->picture, 'user', 'user', $account->uid);
-            file_delete($account->original->picture);
-        }
-        $pictureid = empty($account->picture->fid) ? 0 : $account->picture->fid;
-        db_update('users')
-            ->fields(array('picture' => $pictureid))
-            ->condition('uid', $uid)
-            ->execute();*/
-
         drupal_goto('/user/'.$uid.'/edit');
         exit;
 
+    }elseif($originalemail == $newemail && $submitbutton =="Verify Email"){
+        drupal_set_message(t('You should change the email address if you want to use this button.'),'error');
+        drupal_goto('/user/'.$uid.'/edit');
+        exit;
     }
+
 }
 
 
@@ -117,11 +69,10 @@ function email_registration_user_presave(&$edit, &$account, $category = NULL) {
  *   called.
  */
 function _user_email_notify($op, $account, $emailaddress, $language = NULL) {
-    //print $account->original->mail;exit;
     // By default, we always notify except for canceled and blocked.
     $default_notify = ($op != 'status_canceled' && $op != 'status_blocked');
     $notify = variable_get('user_mail_' . $op . '_notify', $default_notify);
-    //if (!$notify) {
+
         $params['account'] = $account;
         $language = $language ? $language : user_preferred_language($account);
 
@@ -137,7 +88,7 @@ function _user_email_notify($op, $account, $emailaddress, $language = NULL) {
             // We use the site default language for this.
             drupal_mail('user', 'oldemail_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
         }
-    //}
+
 
     return empty($mail) ? NULL : $mail['result'];
 }
@@ -162,7 +113,7 @@ function email_registration_user_insert(&$edit, &$account, $category = NULL) {
 
   if (empty($names)) {
     // Strip off everything after the @ sign.
-    $vepid = db_query('SELECT ID from {StudentProfile} WHERE LOWER(email) = LOWER(:email)', array(':email' => $edit['mail']))->fetchField();
+    $vepid = db_query('SELECT ID from {studentprofile} WHERE LOWER(email) = LOWER(:email)', array(':email' => $edit['mail']))->fetchField();
     $new_name = $vepid;
 
   }
@@ -291,6 +242,7 @@ function email_registration_user_login_validate($form, &$form_state) {
  */
 function email_registration_form_user_profile_form_alter($form, &$form_state) {
   $form['account']['name']['#title'] = t('Display name');
+    $form['account']['submit'] = array('#type' => 'submit', '#value' => t('Verify Email'));
 }
 
 
@@ -309,6 +261,7 @@ function email_registration_menu() {
 
     return $items;
 }
+
 
 /**
  * Menu callback; process one time login link and redirects to the user page on success.
@@ -335,8 +288,6 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                 ->execute();
             drupal_set_message(t('You have just successfully changed your email address! <a href="!user_edit">View the changes.</a>', array('%user' => $user->name, '!user_edit' => url("user/$user->uid/edit"))));
 
-
-            //drupal_set_message(t('You are logged in as %user. <a href="!user_edit">Change your email address.</a>', array('%user' => $user->name, '!user_edit' => url("user/$user->uid/edit"))));
         }
         // A different user is already logged in on the computer.
         else {

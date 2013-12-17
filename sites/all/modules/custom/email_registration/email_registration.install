@@ -56,6 +56,31 @@ $schema['users_history'] = array(
   ),
   'primary key' => array('id'),
 );
+$schema['studentprofile'] = array(
+  'description' => 'TODO: please describe this table!',
+  'fields' => array(
+    'id' => array(
+      'description' => 'VEP ',
+      'type' => 'int',
+      'not null' => TRUE,
+      'default' => 0,
+    ),
+    'email' => array(
+      'description' => 'Email',
+      'type' => 'varchar',
+      'length' => '255',
+      'not null' => FALSE,
+    ),
+    'remarks' => array(
+      'description' => 'TODO: please describe this field!',
+      'type' => 'varchar',
+      'length' => '255',
+      'not null' => TRUE,
+    ),
+  ),
+  'primary key' => array('id'),
+);
+
 
 return $schema;
 }
