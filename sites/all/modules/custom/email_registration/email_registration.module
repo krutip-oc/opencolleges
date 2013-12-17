@@ -253,7 +253,9 @@ function email_registration_menu() {
  */
 function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $hashed_pass, $action = NULL) {
     global $user;
+   
     $newemail = urldecode($newemail);
+    $oldemail = $account->mail;
 
     // When processing the one-time login link, we have to make sure that a user
     // isn't already logged in.
@@ -265,6 +267,9 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
             db_update('users')
                 ->fields(array('mail' => $newemail))
                 ->condition('uid', $user->uid)
+                ->execute();
+            // Add the old email to history table
+            db_insert('users_history')->fields(array('uid' => $user->uid, 'oldemail'=> $user->mail, 'modifiedtime' => date('Y/m/d H:i:s')))
                 ->execute();
             drupal_set_message(t('You have just successfully changed your email address! <a href="!user_edit">View the changes.</a>', array('%user' => $user->name, '!user_edit' => url("user/$user->uid/edit"))));
 
@@ -314,9 +319,13 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                 }if ($action == 'emailresetconfirm') {
                     $token = drupal_random_key();
                     $_SESSION['email_reset_' . $user->uid] = $token;
+                    // Change the email addresss
                     db_update('users')
                         ->fields(array('mail' => $newemail))
                         ->condition('uid', $account->uid)
+                        ->execute();
+                    // Add the old email to history table
+                    db_insert('users_history')->fields(array('uid' => $account->uid, 'oldemail'=> $account->mail, 'modifiedtime' => date('Y/m/d H:i:s')))
                         ->execute();
                     drupal_set_message(t('You have just successfully changed your email address! Please <a href="/user/login">Login</a> to see the changes'));
                 }
