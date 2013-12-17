@@ -2342,7 +2342,11 @@ function user_pass_reset_url($account) {
  */
 function user_email_reset_url($account) {
     $timestamp = REQUEST_TIME;
-    $newemail = $_REQUEST['mail'];
+    if (isset($_REQUEST['mail'])){
+        $newemail = $_REQUEST['mail'];
+    }else{
+        $newemail = $_REQUEST['name'];
+    }
     return url("user/resetemail/$account->uid/$newemail/$timestamp/" . user_pass_rehash($account->pass, $timestamp, $account->login), array('absolute' => TRUE));
 }
 

@@ -16,8 +16,66 @@ function email_registration_user_presave(&$edit, &$account, $category = NULL) {
         drupal_set_message(t('Email update has been successful. You need to login to your new email account: '. $newemail.' !== '.$originalemail.' to verify the new email address within 4 hours.'));
         _user_email_notify('email_reset', $account, $newemail);
         _user_email_notify('oldemail_reset', $account, $originalemail);
+        $account->mail = $originalemail;
+
+        /*if (!empty($edit['pass'])) {
+            // Allow alternate password hashing schemes.
+            require_once DRUPAL_ROOT . '/' . variable_get('password_inc', 'includes/password.inc');
+            $edit['pass'] = user_hash_password(trim($edit['pass']));
+            // Abort if the hashing failed and returned FALSE.
+            if (!$edit['pass']) {
+                return FALSE;
+            }
+
+            db_update('users')
+                ->fields(array('pass' => $edit['pass']))
+                ->condition('uid', $uid)
+                ->execute();
+        }
+        else {
+            // Avoid overwriting an existing password with a blank password.
+            unset($edit['pass']);
+        }*/
+
+        // Process picture uploads.
+        /*if (!empty($account->picture->fid) && (!isset($account->original->picture->fid) || $account->picture->fid != $account->original->picture->fid)) {
+            $picture = $account->picture;
+            // If the picture is a temporary file move it to its final location and
+            // make it permanent.
+            if (!$picture->status) {
+                $info = image_get_info($picture->uri);
+                $picture_directory =  file_default_scheme() . '://' . variable_get('user_picture_path', 'pictures');
+
+                // Prepare the pictures directory.
+                file_prepare_directory($picture_directory, FILE_CREATE_DIRECTORY);
+                $destination = file_stream_wrapper_uri_normalize($picture_directory . '/picture-' . $account->uid . '-' . REQUEST_TIME . '.' . $info['extension']);
+
+                // Move the temporary file into the final location.
+                if ($picture = file_move($picture, $destination, FILE_EXISTS_RENAME)) {
+                    $picture->status = FILE_STATUS_PERMANENT;
+                    $account->picture = file_save($picture);
+                    file_usage_add($picture, 'user', 'user', $account->uid);
+                }
+            }
+            // Delete the previous picture if it was deleted or replaced.
+            if (!empty($account->original->picture->fid)) {
+                file_usage_delete($account->original->picture, 'user', 'user', $account->uid);
+                file_delete($account->original->picture);
+            }
+        }
+        elseif (isset($edit['picture_delete']) && $edit['picture_delete']) {
+            file_usage_delete($account->original->picture, 'user', 'user', $account->uid);
+            file_delete($account->original->picture);
+        }
+        $pictureid = empty($account->picture->fid) ? 0 : $account->picture->fid;
+        db_update('users')
+            ->fields(array('picture' => $pictureid))
+            ->condition('uid', $uid)
+            ->execute();*/
+
         drupal_goto('/user/'.$uid.'/edit');
         exit;
+
     }
 }
 
@@ -259,7 +317,7 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
     global $user;
 
     $newemail = urldecode($newemail);
-    $oldemail = $user->mail;
+    $oldemail = db_query('select mail from {users} where uid=:uid',array(':uid' => $uid))->fetchField();
 
     // When processing the one-time login link, we have to make sure that a user
     // isn't already logged in.
