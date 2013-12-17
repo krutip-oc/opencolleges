@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="final version before update filla text">
+    <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/user/user.module" afterPath="$PROJECT_DIR$/modules/user/user.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="opencolleges.iws" />
@@ -25,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="email_registration.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="0.375" vertical-offset="4794" max-vertical-offset="5610">
+            <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="-10.551724" vertical-offset="4794" max-vertical-offset="5610">
               <folding>
                 <element signature="e#6#92#0" expanded="true" />
               </folding>
@@ -45,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.module" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/user/user.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1041" column="39" selection-start="37842" selection-end="37842" vertical-scroll-proportion="-2.4339623" vertical-offset="15441" max-vertical-offset="61110">
+            <state line="1054" column="7" selection-start="38506" selection-end="38506" vertical-scroll-proportion="0.3901515" vertical-offset="15456" max-vertical-offset="61125">
               <folding />
             </state>
           </provider>
@@ -143,9 +144,9 @@
       <list>
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/drupalchat.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/README.txt" />
-        <option value="$PROJECT_DIR$/modules/user/user.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" />
+        <option value="$PROJECT_DIR$/modules/user/user.module" />
       </list>
     </option>
   </component>
@@ -435,7 +436,11 @@
       <created>1387322072426</created>
       <updated>1387322072426</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final version before update filla text">
+      <created>1387322186979</created>
+      <updated>1387322186979</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -460,7 +465,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1599" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26077586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -473,7 +478,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19131833" sideWeight="0.67138195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19131833" sideWeight="0.67138195" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -602,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/user.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1041" column="39" selection-start="37842" selection-end="37842" vertical-scroll-proportion="-2.4339623" vertical-offset="15441" max-vertical-offset="61110">
+        <state line="1054" column="7" selection-start="38506" selection-end="38506" vertical-scroll-proportion="0.3901515" vertical-offset="15456" max-vertical-offset="61125">
           <folding />
         </state>
       </provider>
@@ -619,7 +624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="0.375" vertical-offset="4794" max-vertical-offset="5610">
+        <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="-10.551724" vertical-offset="4794" max-vertical-offset="5610">
           <folding>
             <element signature="e#6#92#0" expanded="true" />
           </folding>
