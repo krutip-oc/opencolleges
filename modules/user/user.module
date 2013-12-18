@@ -1030,7 +1030,7 @@ function user_account_form(&$form, &$form_state) {
   $form['account'] = array(
     '#type'   => 'container',
     '#weight' => -10,
-  );
+  );     
   // Only show name field on registration form or user can change own username.
   $form['account']['name'] = array(
     '#type' => 'textfield',
