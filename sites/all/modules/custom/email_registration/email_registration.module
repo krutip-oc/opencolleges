@@ -15,7 +15,7 @@ function email_registration_user_presave(&$edit, &$account, $category = NULL) {
     $uid = $account->uid;
 
     if ($originalemail <> $newemail && $submitbutton =="Verify Email"){
-        drupal_set_message(t('Your request to change email address has been sent. Your email will not be changed until you login to your new email account: '. $newemail.' to verify the new email address within 4 hours.'));
+        drupal_set_message(t('Your request to change email address has been sent. Your email address will not be changed until you login in to your account: '. $newemail.' to verify the new email address, login within 4 hours.'));
         _user_email_notify('email_reset', $account, $newemail);
         _user_email_notify('oldemail_reset', $account, $originalemail);
         $account->mail = $originalemail;
@@ -24,7 +24,7 @@ function email_registration_user_presave(&$edit, &$account, $category = NULL) {
         exit;
 
     }elseif($originalemail == $newemail && $submitbutton =="Verify Email"){
-        drupal_set_message(t('You should change the email address if you want to use this button.'),'error');
+        drupal_set_message(t('Email address is not been changed, to update email address use this button.'),'error');
         drupal_goto('/user/'.$uid.'/edit');
         exit;
     }
@@ -209,7 +209,7 @@ function email_registration_form_user_pass_alter(&$form, &$form_state) {
  * Implements hook_form_FORM_ID_alter().
  */
 function email_registration_form_user_login_alter(&$form, &$form_state) {
-  $form['name']['#title'] = t('E-mail');
+  $form['name']['#title'] = t('E-mail/VE Number');
   $form['name']['#description'] = t('Enter your e-mail address.');
   $form['name']['#element_validate'][] = 'email_registration_user_login_validate';
   $form['pass']['#description'] = t('Enter the password that accompanies your e-mail.');
@@ -219,7 +219,7 @@ function email_registration_form_user_login_alter(&$form, &$form_state) {
  * Implements hook_form_FORM_ID_alter().
  */
 function email_registration_form_user_login_block_alter(&$form, &$form_state) {
-  $form['name']['#title'] = t('E-mail');
+  $form['name']['#title'] = t('E-mail/VE Number');
   $form['name']['#element_validate'][] = 'email_registration_user_login_validate';
 }
 

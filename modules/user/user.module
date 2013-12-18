@@ -2794,13 +2794,14 @@ This link can only be used once to log in. It expires after one day and nothing 
             $text = t('Replacement new email for student ID [user:name] at [site:name]', array(), array('langcode' => $langcode));
             break;
       case 'oldemail_reset_body':
-            $text = t("[user:name],
+            $text = t("Dear [user:name],
 
-A request to change the email for your account has been made at [site:name].
+A request to change the Email address for your account has been made at [site:name].
 
-If you belief this is in error please contact student services.
+If you belief this is in error please contact student support services on 1800 000 or email us on test@test.com.au.
 
---  [site:name] team", array(), array('langcode' => $langcode));
+Best Regards,
+[site:name] team", array(), array('langcode' => $langcode));
             break;
 
       case 'status_activated_subject':

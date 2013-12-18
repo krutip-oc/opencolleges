@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
+    <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="final version before update filla text">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/user/user.module" afterPath="$PROJECT_DIR$/modules/user/user.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="email_registration.module" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="-10.551724" vertical-offset="4794" max-vertical-offset="5610">
+            <state line="58" column="43" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.2088167" vertical-offset="705" max-vertical-offset="5655">
               <folding>
                 <element signature="e#6#92#0" expanded="true" />
               </folding>
@@ -37,88 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="password.inc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/password.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="10" selection-start="7216" selection-end="7216" vertical-scroll-proportion="-5.625" vertical-offset="3090" max-vertical-offset="4230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.module" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/user/user.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1054" column="7" selection-start="38506" selection-end="38506" vertical-scroll-proportion="0.3901515" vertical-offset="15456" max-vertical-offset="61125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.admin.inc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/user/user.admin.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="740" column="77" selection-start="29299" selection-end="29304" vertical-scroll-proportion="-2.4339623" vertical-offset="10926" max-vertical-offset="15840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.api.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/user/user.api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email_registration.install" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="55" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-4.9836063" vertical-offset="581" max-vertical-offset="1365">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email_registration.info" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="0.052447554" vertical-offset="0" max-vertical-offset="858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email_registration.api.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email_registration.test" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.test">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.pages.inc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/user/user.pages.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="9" selection-start="9371" selection-end="9371" vertical-scroll-proportion="0.0" vertical-offset="3675" max-vertical-offset="8415">
+            <state line="4039" column="1" selection-start="142087" selection-end="142087" vertical-scroll-proportion="9.083333" vertical-offset="60758" max-vertical-offset="61620">
               <folding />
             </state>
           </provider>
@@ -144,8 +67,8 @@
       <list>
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/drupalchat.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drupalchat/README.txt" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
         <option value="$PROJECT_DIR$/modules/user/user.module" />
       </list>
     </option>
@@ -153,8 +76,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1599" />
+    <option name="y" value="27" />
     <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -362,11 +286,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -436,11 +360,7 @@
       <created>1387322072426</created>
       <updated>1387322072426</updated>
     </task>
-    <task id="LOCAL-00008" summary="final version before update filla text">
-      <created>1387322186979</created>
-      <updated>1387322186979</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -464,25 +384,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1599" y="0" width="1922" height="1081" extended-state="6" />
+    <frame x="1599" y="27" width="1922" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26077586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1600" y="0" width="1920" height="1080" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19131833" sideWeight="0.67138195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19114584" sideWeight="0.67138195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1600" y="0" width="1920" height="1080" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -513,24 +433,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/nodejs/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1195" column="20" selection-start="38389" selection-end="38405" vertical-scroll-proportion="0.0" vertical-offset="21510" max-vertical-offset="21942">
-          <folding />
-        </state>
+        <state line="1195" column="20" selection-start="38389" selection-end="38405" vertical-scroll-proportion="0.0" vertical-offset="21510" max-vertical-offset="21942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/nodejs/nodejs.server.extension.js.example">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="619" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drupalchat/drupalchat.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="905" column="16" selection-start="39388" selection-end="39388" vertical-scroll-proportion="-5.4716983" vertical-offset="13240" max-vertical-offset="21045">
-          <folding />
-        </state>
+        <state line="905" column="16" selection-start="39388" selection-end="39388" vertical-scroll-proportion="-5.4716983" vertical-offset="13240" max-vertical-offset="21045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drupalchat/drupalchat_nodejs/drupalchat_nodejs.server.extension.js">
@@ -546,26 +462,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/user.install">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="2" selection-start="8008" selection-end="8023" vertical-scroll-proportion="32.142857" vertical-offset="6048" max-vertical-offset="16542" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.test">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.test">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="0.052447554" vertical-offset="0" max-vertical-offset="858">
+        <state line="3" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
@@ -579,7 +495,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/password.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="10" selection-start="7216" selection-end="7216" vertical-scroll-proportion="-5.625" vertical-offset="3090" max-vertical-offset="4230">
+        <state line="226" column="10" selection-start="7216" selection-end="7216" vertical-scroll-proportion="0.0" vertical-offset="3390" max-vertical-offset="4395">
           <folding />
         </state>
       </provider>
@@ -600,31 +516,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/user.admin.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="740" column="77" selection-start="29299" selection-end="29304" vertical-scroll-proportion="-2.4339623" vertical-offset="10926" max-vertical-offset="15840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1054" column="7" selection-start="38506" selection-end="38506" vertical-scroll-proportion="0.3901515" vertical-offset="15456" max-vertical-offset="61125">
+        <state line="740" column="77" selection-start="29299" selection-end="29304" vertical-scroll-proportion="0.0" vertical-offset="11100" max-vertical-offset="15885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="55" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="55" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-4.9836063" vertical-offset="581" max-vertical-offset="1365">
+        <state line="4039" column="1" selection-start="142087" selection-end="142087" vertical-scroll-proportion="9.083333" vertical-offset="60758" max-vertical-offset="61620">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="340" column="44" selection-start="13917" selection-end="13930" vertical-scroll-proportion="-10.551724" vertical-offset="4794" max-vertical-offset="5610">
+        <state line="58" column="43" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.2088167" vertical-offset="705" max-vertical-offset="5655">
           <folding>
             <element signature="e#6#92#0" expanded="true" />
           </folding>
