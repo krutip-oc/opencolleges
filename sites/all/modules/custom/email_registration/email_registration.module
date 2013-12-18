@@ -80,13 +80,13 @@ function _user_email_notify($op, $account, $emailaddress, $language = NULL) {
             $mail = drupal_mail('user', $op, $emailaddress, $language, $params);
             // If a user registered requiring admin approval, notify the admin, too.
             // We use the site default language for this.
-            drupal_mail('user', 'email_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
+            //drupal_mail('user', 'email_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
         }
         if ($op == 'oldemail_reset') {
             $mail = drupal_mail('user', $op, $emailaddress, $language, $params);
             // If a user registered requiring admin approval, notify the admin, too.
             // We use the site default language for this.
-            drupal_mail('user', 'oldemail_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
+            //drupal_mail('user', 'oldemail_reset', variable_get('site_mail', ini_get('sendmail_from')), language_default(), $params);
         }
 
 
@@ -335,10 +335,10 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                     // Change the email addresss
                     db_update('users')
                         ->fields(array('mail' => $newemail))
-                        ->condition('uid', $account->uid)
+                        ->condition('uid', $uid)
                         ->execute();
                     // Add the old email to history table
-                    db_insert('users_history')->fields(array('uid' => $account->uid, 'oldemail'=> $oldemail, 'modifiedtime' => date('Y/m/d H:i:s')))
+                    db_insert('users_history')->fields(array('uid' => $uid, 'oldemail'=> $oldemail, 'modifiedtime' => date('Y/m/d H:i:s')))
                         ->execute();
                     drupal_set_message(t('You have just successfully changed your email address! Please <a href="/user/login">Login</a> to see the changes'));
                 }
@@ -347,7 +347,7 @@ function user_email_reset($form, &$form_state, $uid, $newemail, $timestamp, $has
                     $form['help'] = array('#markup' => '<p>' . t('This login can be used only once.') . '</p>');
                     $form['actions'] = array('#type' => 'actions');
                     $form['actions']['submit'] = array('#type' => 'submit', '#value' => t('Change Email Address'));
-                    $form['#action'] = url("user/resetemail/$uid/$account->mail/$timestamp/$hashed_pass/emailresetconfirm");
+                    $form['#action'] = url("user/resetemail/$uid/$newemail/$timestamp/$hashed_pass/emailresetconfirm");
                     return $form;
                 }
 
