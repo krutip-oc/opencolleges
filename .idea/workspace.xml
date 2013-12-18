@@ -2,6 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/htmlmail-7.x-2.65.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/pictures/picture-35-1387156496.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/pictures/picture-35-1387156496.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/pictures/picture-60-1387256251.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/pictures/picture-60-1387256251.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/pictures/picture-63-1387321287.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/pictures/picture-63-1387321287.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/CHANGELOG.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/CHANGELOG.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/CHANGELOG.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/README.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/README.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/html_to_text.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail--htmlmail.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail--simplenews.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail--user--password_reset.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.admin.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.install" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.mail.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/htmlmail/htmlmail.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/mailsystem.admin.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/mailsystem.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/mailsystem.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/mailsystem/mailsystem.theme.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/engines/mysql.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/engines/pgsql.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.admin.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.drush.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.install" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/schema.pages.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/schema/tests/schema_regression.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="opencolleges.iws" />
@@ -28,7 +72,7 @@
       <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="2.7722008" vertical-offset="3574" max-vertical-offset="5565">
+            <state line="264" column="0" selection-start="9362" selection-end="9362" vertical-scroll-proportion="0.65957445" vertical-offset="3574" max-vertical-offset="5565">
               <folding />
             </state>
           </provider>
@@ -149,9 +193,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1600" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="1601" />
+    <option name="width" value="1918" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -365,6 +409,17 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="PublishConfig" serverName="https://github.com/kimwright-opencolleges/os2" serverId="6db1ddfe-0974-4435-b18e-1ecc49c8420a">
+    <servers>
+      <server id="6db1ddfe-0974-4435-b18e-1ecc49c8420a">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -445,7 +500,11 @@
       <created>1387327902848</created>
       <updated>1387327902848</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="final version">
+      <created>1387327930391</created>
+      <updated>1387327930391</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -469,21 +528,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1601" y="0" width="1918" height="1079" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26077586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="true" weight="0.26143792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1600" y="0" width="1920" height="1080" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33006537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19399786" sideWeight="0.6702938" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19420601" sideWeight="0.66993463" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -508,7 +567,8 @@
     <MESSAGE value="email change link with verification link: all features are almost complete" />
     <MESSAGE value="email change link with verification link: all features are almost complete at the moment, to to optimize the code in next commit" />
     <MESSAGE value="final version before update filla text" />
-    <option name="LAST_COMMIT_MESSAGE" value="final version before update filla text" />
+    <MESSAGE value="final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -625,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="2.7722008" vertical-offset="3574" max-vertical-offset="5565">
+        <state line="264" column="0" selection-start="9362" selection-end="9362" vertical-scroll-proportion="0.65957445" vertical-offset="3574" max-vertical-offset="5565">
           <folding />
         </state>
       </provider>
