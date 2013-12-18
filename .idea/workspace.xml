@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2c0a17f-775f-470f-a76c-daa901735b01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="opencolleges.iws" />
@@ -438,7 +437,11 @@
       <created>1387322186979</created>
       <updated>1387322186979</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final version before update filla text">
+      <created>1387327812254</created>
+      <updated>1387327812255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
