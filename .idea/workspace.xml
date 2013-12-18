@@ -28,7 +28,7 @@
       <file leaf-file-name="email_registration.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="0.68725866" vertical-offset="4654" max-vertical-offset="5565">
+            <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="2.7722008" vertical-offset="3574" max-vertical-offset="5565">
               <folding />
             </state>
           </provider>
@@ -441,7 +441,11 @@
       <created>1387327812254</created>
       <updated>1387327812255</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="final version before update filla text">
+      <created>1387327902848</created>
+      <updated>1387327902848</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -621,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/email_registration/email_registration.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="0.68725866" vertical-offset="4654" max-vertical-offset="5565">
+        <state line="337" column="36" selection-start="13809" selection-end="13809" vertical-scroll-proportion="2.7722008" vertical-offset="3574" max-vertical-offset="5565">
           <folding />
         </state>
       </provider>
